@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --write-azul: #003150;
+    --write-cinza: #777777;
+    --write-cinza-escuro: #363636;
+    --write-branco: #ffffff;
+    --write-preto: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: transparent !important;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 33px;
+    color: var(--write-cinza);
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.btn-branco {
+    width: fit-content;
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: 1px solid var(--write-branco);
+    text-align: center;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--write-branco);
+    font-size: 14px;
+    transition: .3s ease-in;
+}
+  
+.btn-branco:hover {
+    background-color: var(--write-branco);
+    color: var(--write-azul);
+    transition: .3s ease-out;
+}
+
+.btn-azul {
+    width: fit-content;
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: 1px solid var(--write-azul);
+    text-align: center;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--write-azul);
+    font-size: 14px;
+    transition: .3s ease-in;
+}
+
+.btn-azul:hover {
+    background-color: var(--write-azul);
+    color: var(--write-branco);
+    transition: .3s ease-out;
+}
+
+.btn-slider span.bold,
+.btn-azul span.bold, 
+.btn-branco span.bold {
+    font-weight: 600;
+}
+
+.arrow-left-bc {
+    cursor: pointer;
+    display: flex;
+    background-image: url(/assets/img/arrow-left_hover.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    background-color: transparent;
+    transform: rotate(0deg);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid var(--write-branco);
+    transition: .3 ease-in;
+}
+
+.arrow-right-bc {
+    cursor: pointer;
+    display: flex;
+    background-image: url(/assets/img/arrow-right_hover.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    background-color: transparent;
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid var(--write-branco);
+    transition: .3 ease-in;
+}
+
+.arrow-right-bc:hover, .arrow-left-bc:hover {
+    border: 1px solid var(--write-azul);
+    background-color: var(--write-azul);
+    transition: .3 ease-out;
+}
+
+
+.arrow-left-azul {
+    cursor: pointer;
+    display: flex;
+    background-image: url(/assets/img/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    background-color: transparent;
+    transform: rotate(0deg);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid var(--write-azul);
+    transition: .3 ease-in;
+}
+
+.arrow-right-azul {
+    cursor: pointer;
+    display: flex;
+    background-image: url(/assets/img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    background-color: transparent;
+    transform: rotate(180deg);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid var(--write-azul);
+    transition: .3 ease-in;
+}
+
+.arrow-right-azul:hover {
+    background-image: url(/assets/img/arrow-right_hover.svg);
+    border: 1px solid var(--write-azul);
+    background-color: var(--write-azul);
+    transition: .3 ease-out;
+} 
+
+.arrow-left-azul:hover {
+    background-image: url(/assets/img/arrow-left_hover.svg);
+    border: 1px solid var(--write-azul);
+    background-color: var(--write-azul);
+    transition: .3 ease-out;
+}

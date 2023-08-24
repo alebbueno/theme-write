@@ -15,6 +15,7 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php wp_head(); ?>
 </head>
@@ -24,7 +25,7 @@
     <header id="masthead">
         <div class="container-fluid content-menu-header">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light d-block d-md-flex px-0 justify-content-between">
+                <nav class="navbar navbar-expand-lg navbar-light m-0 p-0 d-block d-md-flex justify-content-between">
 
                     <?php 
                     $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -55,21 +56,20 @@
                                     );
                                 ?>
                             </div>
-                            <div class="redes-sociais">
-                                <?php
-                                    wp_nav_menu( array(
-                                        'menu' => 'header-redes',
-                                        'theme_location' => 'header-redes',
-                                        'depth' => 2,
-                                        'container' => 'div',
-                                        'container_class' => 'justify-content-md-end',
-                                        'container_id' => 'menu-redes',
-                                        'menu_class' => 'menu-redes nav navbar-nav',
-                                        )
-                                    );
-                                ?>
-                            </div>
+                            
                         </div>
+                    </div>
+
+                    <div class="contact-header">
+                        <a href="<?php get_site_url(); ?>/contact" class="btn-amarelo">Contact Us</a>
+                        <ul class="lang">
+                            <li>
+                                <a href="#en" class="active">EN</a>
+                            </li>
+                            <li>
+                                <a href="#pt">PT</a>
+                            </li>
+                        </ul>
                     </div>
                     
                 </nav>

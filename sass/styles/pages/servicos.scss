@@ -1,0 +1,35 @@
+.section-services::before {
+  background-image: none;
+}
+
+//single servicos
+.header-service {
+  margin-bottom: 86px;
+}
+.section-case {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-case h2 {
+  color: var(--write-azul);
+}
+
+.section-case h4 {
+  color: var(--write-amarelo);
+}
+
+.content-servicos {
+  position: relative;
+}
+
+.content-servicos h2 {
+  color: var(--write-azul);
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  max-width: 450px;
+}
+
+.content-servicos a.btn-border-azul {
+  margin-top: 40px;
+}

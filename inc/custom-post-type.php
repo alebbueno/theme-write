@@ -7,18 +7,18 @@
  
  function custom_posts_theme() {
 
-    register_post_type('solucoes',
+    register_post_type('servicos',
         array(
             'labels' => array(
-                'name' => ('Soluções'),
-                'singular_name' => ('Soluções'),
-                'add_new_item' => ('Add Soluções'),
-                'not_found' =>  ('Nenhuma Soluções encontrada')
+                'name' => ('Serviços'),
+                'singular_name' => ('Serviços'),
+                'add_new_item' => ('Add Serviços'),
+                'not_found' =>  ('Nenhuma Serviços encontrada')
             ),
             'public' => true,
-            'menu_icon' => 'dashicons-hammer',
+            'menu_icon' => 'dashicons-chart-pie',
             'publicly_queryable' => true,
-            'rewrite' => array("slug" => "solucoes"),
+            'rewrite' => array("slug" => "service"),
             'capability_type'    => 'post',
             'supports' => array('title', 'editor', 'thumbnail'),
             'has_archive' => true,

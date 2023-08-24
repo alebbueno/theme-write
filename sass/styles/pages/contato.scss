@@ -1,0 +1,208 @@
+.section-contact {
+  position: relative;
+}
+
+.section-contact h2 {
+  color: var(--write-azul);
+}
+
+.section-contact h4 {
+  color: var(--write-amarelo);
+}
+
+//form contato
+
+.form-contato {
+  padding-bottom: 50px;
+}
+
+.form-contato label {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--write-azul);
+  margin-bottom: 14px;
+}
+
+.form-contato input[type=text], 
+.form-contato input[type=email],
+.form-contato select {
+    background-color: #FFF;
+    border: 2px solid #E2E2E2;
+    border-radius: 50px;
+    width: 100%;
+    padding: 20px 38px;
+    font-size: 14px;
+    color: var(--write-azul);
+    font-weight: 400;
+    margin-bottom: 30px;
+    min-height: 64px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  position: relative;
+  text-overflow: '';
+  background-image: url(/assets/img/arrow-select.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.form-contato textarea {
+    background-color: #FFF;
+    border: 2px solid #E2E2E2;
+    border-radius: 30px;
+    padding: 20px 38px;
+    font-size: 15px;
+    font-weight: 300;
+    height: 398px;
+    width: 100%;
+}
+
+.form-contato .wpcf7-list-item {
+  padding: 0;
+  margin: 0;
+}
+
+.form-contato .wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-contato input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  background-color: var(--write-branco);
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid var(--write-cinza);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-contato input[type=checkbox]:checked {
+  background-color: var(--write-azul);
+  border: 1px solid var(--write-azul);
+}
+
+.form-contato .wpcf7-list-item .wpcf7-list-item-label {
+  color: var(--write-cinza);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.form-contato input[type=submit] {
+  width: fit-content;
+  padding: 15px 63px;
+  border-radius: 50px;
+  border: 3px solid var(--write-azul);
+  background-color: var(--write-branco);
+  text-align: center;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--write-azul);
+  font-size: 16px;
+  transition: .3s ease-in;
+  margin: 33px auto 0;
+}
+
+.form-contato input[type=submit]:hover {
+  background-color: var(--write-azul);
+  color: var(--write-branco);
+  transition: .3s ease-out;
+}
+
+
+// section box
+.section-box-contato {
+  position: relative;
+  background-image: url(/assets/img/bg-box-contato.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom -110px center;
+  padding-bottom: 132px;
+  background-size: 100%;
+  padding-top: 20px;
+}
+
+.box-contato {
+  background-color: var(--write-branco);
+  border-radius: 20px;
+  padding: 58px 39px;
+  max-height: 300px;
+  position: relative;
+
+  -webkit-box-shadow: 0px 0px 28px -8px rgba(150,150,150,1);
+  -moz-box-shadow: 0px 0px 28px -8px rgba(150,150,150,1);
+  box-shadow: 0px 0px 28px -8px rgba(150,150,150,1);
+}
+
+.box-contato img {
+  height: 50px;
+  margin-bottom: 30px;
+  transition: .3s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+.box-contato h3 {
+  color: var(--write-azul);
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: .3s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+.box-contato p {
+  color: var(--write-cinza);
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 24px;
+  transition: .3s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+// .box-contato:hover {
+//   background-color: var(--write-amarelo);
+// }
+
+.box-contato:hover h3 {
+  //color: var(--write-branco);
+  position: relative;
+  top: -10px;
+  transition: .3s ease-in;
+}
+
+.box-contato:hover p {
+  //color: var(--write-branco);
+  position: relative;
+  top: -10px;
+  transition: .3s ease-in;
+}
+
+.box-contato:hover img {
+  //filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7472%) hue-rotate(95deg) brightness(113%) contrast(113%);
+  position: relative;
+  top: -10px;
+  transition: .3s ease-in;
+}
+
+.mapa {
+  width: 100%;
+  height: 443px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

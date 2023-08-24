@@ -1,0 +1,242 @@
+.content-menu-header {
+  background-color: transparent;
+  height: 86px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+}
+
+.custom-margin {
+  position: fixed;
+  width: 100%;
+  background-image: url(/assets/img/fundo-azul.png);
+  background-size: cover;
+  background-position: center;
+  height: 116px;
+  z-index: 999;
+}
+
+.content-menu-header img {
+  margin-top: 28px;
+}
+
+.navbar {
+  align-items: flex-start;
+}
+
+.nav-header {
+  // padding-right: 30px;
+  // margin-right: 30px;
+  // border-right: 1px solid var(--write-cinza);
+}
+
+.menu-header ul {
+  gap: 70px;
+}
+.menu-header ul li {
+  height: 80px;
+  display: flex;
+  align-items: end;
+}
+.menu-header ul li a {
+  font-size: 15px;
+  color: var(--write-branco);
+  font-weight: 400;
+  transition: .3s ease-in-out;
+}
+
+.menu-header ul li:hover {
+  border-top: 5px solid var(--write-amarelo);
+  transition: .3s ease-in-out;
+}
+
+.menu-header ul li a:hover {  
+  color: var(--write-amarelo);
+  transition: .3s ease-in-out;
+}
+
+.menu-header ul li a:active {  
+  color: var(--write-amarelo);
+  transition: .3s ease-in-out;
+}
+
+.menu-header ul li.current_page_item {
+  border-top: 5px solid var(--write-amarelo);
+}
+
+.menu-header ul li .dropdown-menu {
+  position: relative;
+  background-color: var(--write-azul);
+  color: var(--write-branco);
+  border: 0;
+  border-radius: 0;
+}
+
+.menu-header ul li .dropdown-menu li {
+  height: 50px;
+}
+
+.menu-header ul li .dropdown-menu::before {
+  content: '';
+  width: 70px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--write-amarelo);
+}
+
+.menu-header ul li .dropdown-menu li:hover {
+  border-top: 0;
+  background-color: transparent;
+}
+
+.menu-header ul li .dropdown-menu li a {
+  font-size: 15px;
+  color: var(--write-branco);
+  font-weight: 400;
+  transition: .3s ease-in-out;
+  padding: 10px 60px 10px 20px;
+}
+.menu-header ul li .dropdown-menu li a:hover {  
+  color: var(--write-amarelo);
+  background: transparent;
+  transition: .3s ease-in-out;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+}
+
+.menu-redes {
+  gap: 20px;
+}
+
+.menu-redes li a {
+  font-size: 22px;
+  color: var(--write-azul);
+}
+
+.contact-header {
+  display: flex;
+  align-items: end;
+  height: 86px;
+}
+
+.btn-amarelo {
+  border: 3px solid var(--write-amarelo);
+  color: var(--write-branco);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 55px;
+  height: 55px;
+  max-width: 168px;
+  width: 168px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease-in;
+}
+
+.btn-amarelo:hover {
+  background-color: var(--write-amarelo);
+  transition: .3s ease-in-out;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  height: 55px;
+  padding: 0;
+  gap: 10px;
+  margin-left: 36px;
+}
+
+.lang li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--write-branco);
+  opacity: .2;
+}
+
+.lang li a.active {
+  opacity: .4;
+}
+
+/*MOBILE*/
+
+@media (max-width: 780px) {
+  .content-menu-header img {
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+  .navbar-toggler {
+    top: 30px;
+  }
+  .contact-header {
+    display: none;
+  }
+  .content-menu-header {
+    height: auto;
+    padding: 10px 0 20px;
+  }
+
+  .content-menu-header .container {
+    height: auto;
+    padding: 0;
+  }
+
+  #menu-mobile {
+    background-color: var(--write-azul);
+    padding: 0 15px;
+    margin-top: 29px;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    background-color: transparent;
+    font-size: 28px;
+    color: var(--write-branco);
+    position: absolute;
+    right: 20px;
+    top: 32px;
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .nav-header {
+    padding: 20px 0;
+    margin-right: 0;
+    border-right: 0;
+    width: 100%;
+  }
+
+  .menu-header ul {
+    gap: 0px;
+    text-align: center;
+  }
+
+  .redes-sociais {
+    display: flex;
+  }
+  .menu-redes {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-redes li {
+    padding: 0 10px;
+    float: left;
+  }
+}

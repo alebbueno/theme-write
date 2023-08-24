@@ -85,6 +85,7 @@ function duo_studio_theme_menu(){
         'principal' => __('Menu principal', 'menu-duostudio'), // Main Navigation
         'header-redes' => __('Menu Redes Sociais', 'menu-redes'), // Main Navigation
         'footer' => __('Menu Footer', 'menu-footer'), // Main Navigation
+        'footer-service' => __('Menu Footer Service', 'menu-footer-service'), // Main Navigation
         'footer-politicas' => __('Menu Footer Politicas', 'menu-footer-politicas'), // Main Navigation
     ));
 }
@@ -145,7 +146,7 @@ function get_excerpt( $count, $text ) {
     $conttxt = strlen($excerpt);
     if($conttxt >= $count){
         $reduz = mb_substr($excerpt, 0, $count, 'UTF-8');
-        $excerpt = $reduz.'...';
+        $excerpt = $reduz.'';
     } else{
         $excerpt = $excerpt;
     }
